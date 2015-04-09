@@ -30,7 +30,6 @@ func CorrelationCoefficient(x []float64, y []float64)(r float64){
     var_y += math.Pow( (float64(y[i]) - mean_y), 2.0)
   }
 
-  //相関係数
   r = cov / math.Sqrt(var_x)
   r /= math.Sqrt(var_y)
 
